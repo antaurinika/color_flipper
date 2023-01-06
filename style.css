@@ -1,0 +1,81 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+nav {
+    position: fixed;
+    height: 10%;
+    width: 100%;
+    background-color: antiquewhite;
+}
+.container_1 {
+    position: absolute;
+    left: 20%;
+    top: 1.5vh;
+    font-size: 3vh;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color:#308dcd;
+}
+
+.container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    top: 40vh;
+    gap: 4vh;
+    align-items: center;
+}
+
+.text {
+    background-color: black;
+    color: #308dcd ;
+    font-size: 3vw;
+    padding: 0.5vw 2vw;
+    border-radius: 1vh;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#btn {
+    background-color: #000;
+    color: #308dcd;
+    padding: 1vw 2vw;
+    border-radius: 5px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1.3vw;
+    font-weight: 800;
+    border: none;
+}
+
+#btn:hover {
+    background-color: transparent;
+    color: #308dcd;
+    padding: 1vw 2vw;
+    border-radius: 5px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1.3vw;
+    font-weight: 800;
+    border: 2px solid black;
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        top: 30vh;
+    }
+    
+
+     #btn {
+         font-size: 2vw;
+         padding: 2vw 3vw;
+     }
+
+     #btn:hover {
+        font-size: 2vw;
+        padding: 2vw 3vw;
+     }
+
+     .text {
+         padding: 3vw;
+         font-size: 5vw;
+     }
+}
